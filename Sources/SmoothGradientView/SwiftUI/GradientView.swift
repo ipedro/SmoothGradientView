@@ -40,6 +40,6 @@ struct GradientView: UIViewRepresentable {
 @available(iOS 14.0, *)
 struct GradientView_Preview: PreviewProvider {
     static var previews: some View {
-        GradientPreviews.previews
+        GradientPreviewProvider.previews
     }
 }
