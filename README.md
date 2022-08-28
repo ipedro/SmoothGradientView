@@ -6,4 +6,4 @@ This package provides a gradient view (UIKit and SwiftUI) capable of color inter
 Requirements:
 iOS 14+
 
-![SmoothGradientView](Documentation/header.png)
+![SmoothGradientView](Documentation/transparent-header.png)
