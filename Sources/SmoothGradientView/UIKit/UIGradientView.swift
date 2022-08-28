@@ -49,13 +49,8 @@ public final class UIGradientView: UIView {
         self.configuration = configuration
     }
     
-    // MARK: - ViewCode Protocol
-    
-    public func setupViews() {
-        isUserInteractionEnabled = false
-    }
-    
     // MARK: - Overrides
+    
     public override func draw(_ rect: CGRect) {
         gradient.colors = interpolateColors().map(\.cgColor)
         gradient.endPoint = configuration.end
