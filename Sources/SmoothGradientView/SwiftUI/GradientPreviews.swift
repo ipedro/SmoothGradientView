@@ -36,6 +36,7 @@ enum GradientPreviews: String, Hashable, CaseIterable, PreviewProvider {
     private var colors: [UIColor] {
         [.systemYellow, .systemGreen, .systemBlue, .systemPurple, .systemRed]
     }
+    
     var body: some View {
         NavigationView {
             ScrollView {
@@ -64,9 +65,9 @@ enum GradientPreviews: String, Hashable, CaseIterable, PreviewProvider {
                 .padding(8)
             }
             .navigationTitle(rawValue.localizedCapitalized)
-            .previewDisplayName(rawValue.localizedCapitalized)
-            .previewLayout(.sizeThatFits)
         }
+        .previewDisplayName(rawValue.localizedCapitalized)
+        .previewLayout(.sizeThatFits)
     }
     
     static var previews: some View {

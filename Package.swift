@@ -3,20 +3,20 @@
 import PackageDescription
 
 let package = Package(
-    name: "UIGradientView",
+    name: "SmoothGradientView",
     platforms: [.iOS(.v14)],
     products: [
         .library(
-            name: "UIGradientView",
-            targets: ["UIGradientView"]),
+            name: "SmoothGradientView",
+            targets: ["SmoothGradientView"]),
     ],
     dependencies: [],
     targets: [
         .target(
-            name: "UIGradientView",
+            name: "SmoothGradientView",
             dependencies: []),
         .testTarget(
-            name: "UIGradientViewTests",
-            dependencies: ["UIGradientView"]),
+            name: "SmoothGradientViewTests",
+            dependencies: ["SmoothGradientView"]),
     ]
 )

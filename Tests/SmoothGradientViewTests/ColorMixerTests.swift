@@ -19,7 +19,7 @@
 //  SOFTWARE.
 
 import XCTest
-@testable import UIGradientView
+@testable import SmoothGradientView
 
 final class ColorMixerTests: XCTestCase {
     func test_mixWhiteAndBlack_gray() {

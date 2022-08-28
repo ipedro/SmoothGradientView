@@ -1,4 +1,4 @@
-# UIGradientView
+# SmoothGradientView
 
 This package provides a gradient view (UIKit and SwiftUI) capable of color interpolation and easing, for smooth results.
   

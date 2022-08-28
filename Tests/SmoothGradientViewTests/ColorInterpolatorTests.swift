@@ -19,7 +19,7 @@
 //  SOFTWARE.
 
 import XCTest
-@testable import UIGradientView
+@testable import SmoothGradientView
 
 final class ColorInterpolatorTests: XCTestCase {
     func test_linearInterpolationWithZeroSteps_isCorrect() {

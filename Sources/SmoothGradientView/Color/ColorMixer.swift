@@ -21,12 +21,18 @@
 import UIKit
 import SwiftUI
 
-struct ColorMixer: Hashable {
+public struct ColorMixer: Hashable {
     var c1: UIColor
     var c2: UIColor
     var ratio: CGFloat
     
-    func mix() -> UIColor {
+    public init(c1: UIColor, c2: UIColor, ratio: CGFloat) {
+        self.c1 = c1
+        self.c2 = c2
+        self.ratio = ratio
+    }
+    
+    public func mix() -> UIColor {
         var r1: CGFloat = 0, g1: CGFloat = 0, b1: CGFloat = 0, a1: CGFloat = 0
         var r2: CGFloat = 0, g2: CGFloat = 0, b2: CGFloat = 0, a2: CGFloat = 0
         

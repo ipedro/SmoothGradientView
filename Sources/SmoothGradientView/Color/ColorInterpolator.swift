@@ -20,12 +20,18 @@
 
 import UIKit
 
-struct ColorInterpolator: Hashable {
+public struct ColorInterpolator: Hashable {
     var colors: [UIColor]
     var ease: Ease
     var steps: UInt
     
-    func interpolate() -> [UIColor] {
+    public init(colors: [UIColor], ease: Ease, steps: UInt) {
+        self.colors = colors
+        self.ease = ease
+        self.steps = steps
+    }
+    
+    public func interpolate() -> [UIColor] {
         colors
             .enumerated()
             .map { offset, color -> [UIColor] in
