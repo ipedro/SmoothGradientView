@@ -21,6 +21,7 @@
 #if DEBUG
 import SwiftUI
 
+@available(iOS 14.0, *)
 enum GradientPreviews: String, Hashable, CaseIterable, PreviewProvider {
     case Vertical, Horizontal, Radial, Conic
     
